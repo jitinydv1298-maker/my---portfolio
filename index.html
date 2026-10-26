@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,50 +9,70 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Navigation -->
   <header class="header">
     <nav class="navbar">
       <a class="logo" href="#home">JY<span>.</span></a>
       <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+
       <div class="nav-links" id="navLinks">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#chatbot">AI Chatbot</a>
         <a href="#contact">Contact</a>
       </div>
+
       <button id="themeToggle" class="theme-btn" aria-label="Toggle light and dark mode">🌙</button>
     </nav>
   </header>
 
   <main>
+
+    <!-- Home -->
     <section id="home" class="hero section">
       <div class="hero-content">
         <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
         <h1>Hi, I'm <span>Jitin Yadav</span></h1>
         <h2>B.Tech Computer Science Student</h2>
-        <p class="intro">I am learning programming, web development, and problem-solving while building my technical skills through academic projects.</p>
+        <p class="intro">
+          I am learning programming, web development, and problem-solving
+          while building my technical skills through academic projects.
+        </p>
+
         <div class="hero-actions">
           <a class="btn" href="#projects">Explore Projects</a>
           <a class="btn btn-outline" href="#contact">Contact Me</a>
         </div>
       </div>
+
       <div class="hero-card">
         <div class="avatar">JY</div>
         <h3>Jitin Yadav</h3>
-        <p>Computer Science & Engineering</p>
+        <p>Computer Science &amp; Engineering</p>
         <p class="university">JECRC University</p>
       </div>
     </section>
 
+    <!-- About -->
     <section id="about" class="section">
       <p class="eyebrow">GET TO KNOW ME</p>
       <h2 class="section-title">About Me</h2>
       <div class="content-card">
-        <p>I am a B.Tech Computer Science and Engineering student at JECRC University. I am developing my skills in programming, web technologies, and AI-assisted development. My goal is to strengthen my fundamentals and apply what I learn to practical projects.</p>
+        <p>
+          I am a B.Tech Computer Science and Engineering student at
+          JECRC University. I am developing my skills in programming,
+          web technologies, and AI-assisted development. My goal is to
+          strengthen my fundamentals and apply what I learn to practical
+          projects.
+        </p>
       </div>
     </section>
 
+    <!-- Education -->
     <section id="education" class="section">
       <p class="eyebrow">MY ACADEMIC JOURNEY</p>
       <h2 class="section-title">Education</h2>
@@ -63,25 +83,54 @@
       </div>
     </section>
 
+    <!-- Skills -->
     <section id="skills" class="section">
       <p class="eyebrow">WHAT I AM LEARNING</p>
       <h2 class="section-title">Skills</h2>
+
       <div class="skills-grid">
-        <div class="skill-card"><span> C </span><h3>C Programming</h3><p>Programming fundamentals</p></div>
-        <div class="skill-card"><span>Py</span><h3>Python</h3><p>Basic programming and scripts</p></div>
-        <div class="skill-card"><span>HTML</span><h3>HTML</h3><p>Web page structure</p></div>
-        <div class="skill-card"><span>CSS</span><h3>CSS</h3><p>Web styling and layouts</p></div>
-        <div class="skill-card"><span>PS</span><h3>Problem Solving</h3><p>Logical thinking and practice</p></div>
+        <div class="skill-card">
+          <span>C</span>
+          <h3>C Programming</h3>
+          <p>Programming fundamentals</p>
+        </div>
+        <div class="skill-card">
+          <span>Py</span>
+          <h3>Python</h3>
+          <p>Basic programming and scripts</p>
+        </div>
+        <div class="skill-card">
+          <span>HTML</span>
+          <h3>HTML</h3>
+          <p>Web page structure</p>
+        </div>
+        <div class="skill-card">
+          <span>CSS</span>
+          <h3>CSS</h3>
+          <p>Web styling and layouts</p>
+        </div>
+        <div class="skill-card">
+          <span>PS</span>
+          <h3>Problem Solving</h3>
+          <p>Logical thinking and practice</p>
+        </div>
       </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="section">
       <p class="eyebrow">MY WORK</p>
       <h2 class="section-title">Projects</h2>
-      <p class="section-description">Explore my coursework and planned projects. Update each card as you complete and upload the corresponding work.</p>
+      <p class="section-description">
+        Explore my Python programs and coursework projects.
+      </p>
+
       <div class="project-controls">
-        <input id="projectSearch" type="search" placeholder="Search projects or technologies..." aria-label="Search projects">
-        <select id="technologyFilter" aria-label="Filter projects by technology">
+        <input id="projectSearch" type="search"
+          placeholder="Search projects or technologies..."
+          aria-label="Search projects">
+
+        <select id="technologyFilter" aria-label="Filter projects">
           <option value="all">All technologies</option>
           <option value="python">Python</option>
           <option value="quiz">Quiz</option>
@@ -89,56 +138,217 @@
           <option value="web">Web</option>
         </select>
       </div>
+
       <div id="projectGrid" class="projects-grid">
-        <article class="project-card" data-search="python programs collection factorial fibonacci structure dictionary python" data-tech="python">
-          <span class="project-number">01</span><p class="project-tag">Python</p>
-          <h3>Python Programs Collection</h3>
-          <p>A collection planned to include factorial, Fibonacci, and structure-to-dictionary conversion programs with documentation.</p>
-          <span class="status">Coursework project</span>
+
+        <article class="project-card"
+          data-search="c++ python factorial fibonacci struct dictionary conversion"
+          data-tech="python">
+          <span class="project-number">01</span>
+          <p class="project-tag">C++ · Python</p>
+          <h3>
+            <a href="https://github.com/jitinydv1298-maker/python-programms-25bcon1208" target="_blank" rel="noopener noreferrer">
+              C++ to Python Program Conversion
+            </a>
+          </h3>
+          <p>A collection of three basic programming exercises converted from C++ to Python, covering factorial calculation, Fibonacci series generation, and the conversion of C++ structures into Python dictionaries.</p>
+          <p>
+            Repositories:
+            <a href="https://github.com/jitinydv1298-maker/python-programms-25bcon1208" target="_blank" rel="noopener noreferrer">Factorial</a>
+            <a href="https://github.com/jitinydv1298-maker/python-programms-25bcon1208" target="_blank" rel="noopener noreferrer">Fibonacci</a>
+            <a href="https://github.com/jitinydv1298-maker/python-programms-25bcon1208" target="_blank" rel="noopener noreferrer">Struct to Dictionary</a>
+          </p>
         </article>
-        <article class="project-card" data-search="messy python code improvement python clean code" data-tech="python">
-          <span class="project-number">02</span><p class="project-tag">Python</p>
-          <h3>Messy Python Code Improvement</h3>
-          <p>A project focused on understanding and improving the readability of a Python code sample.</p>
-          <span class="status">Coursework project</span>
+
+        <article class="project-card"
+          data-search="python debugging testing bug fixing cursor ai"
+          data-tech="python">
+          <span class="project-number">02</span>
+          <p class="project-tag">Python</p>
+          <h3>
+            <a href="https://github.com/jitinydv1298-maker/bug-fixing-cursor-ai-25bcon1208" target="_blank" rel="noopener noreferrer">
+              Python Debugging and Testing
+            </a>
+          </h3>
+          <p>A Python programming assignment focused on identifying and correcting errors in existing code. The project also includes a test file to verify the corrected program's behavior and check whether it works as expected.</p>
+          <a href="https://github.com/jitinydv1298-maker/bug-fixing-cursor-ai-25bcon1208" target="_blank" rel="noopener noreferrer">
+            View Project →
+          </a>
         </article>
-        <article class="project-card" data-search="bug fixing cursor ai debugging python" data-tech="python">
-          <span class="project-number">03</span><p class="project-tag">AI & Coding</p>
-          <h3>Bug Fixing Using Cursor AI</h3>
-          <p>A learning project about identifying code issues and using an AI coding assistant to investigate possible fixes.</p>
-          <span class="status">Coursework project</span>
+
+        <article class="project-card"
+          data-search="python code refactoring messy cursor ai"
+          data-tech="python">
+          <span class="project-number">03</span>
+          <p class="project-tag">Python</p>
+          <h3>
+            <a href="https://github.com/jitinydv1298-maker/messy-python-code-25bcon1208" target="_blank" rel="noopener noreferrer">
+              Python Code Refactoring with Cursor AI
+            </a>
+          </h3>
+          <p>A Python program focused on improving the structure and readability of an existing messy Python program using Cursor AI, while preserving its original output and intended behavior.</p>
+          <a href="https://github.com/jitinydv1298-maker/messy-python-code-25bcon1208" target="_blank" rel="noopener noreferrer">
+            View Project →
+          </a>
         </article>
-        <article class="project-card" data-search="interactive quiz application quiz javascript web" data-tech="quiz web">
-          <span class="project-number">04</span><p class="project-tag">Web Development</p>
-          <h3>Interactive Quiz Application</h3>
-          <p>A quiz application planned to provide questions, answer selection, and a score summary.</p>
-          <span class="status">Coursework project</span>
+
+        <article class="project-card"
+          data-search="quiz html css javascript web"
+          data-tech="quiz web">
+          <span class="project-number">04</span>
+          <p class="project-tag">HTML · CSS · JavaScript</p>
+          <h3>
+            <a href="https://github.com/jitinydv1298-maker/interactive-quiz-25bcon1208" target="_blank" rel="noopener noreferrer">
+              Quiz
+            </a>
+          </h3>
+          <p>A quiz-based web project built using HTML, JavaScript, and CSS, with the initial HTML and JavaScript developed independently and Cursor AI used to create the CSS styling.</p>
+          <a href="https://github.com/jitinydv1298-maker/interactive-quiz-25bcon1208" target="_blank" rel="noopener noreferrer">
+            View Project →
+          </a>
         </article>
-        <article class="project-card" data-search="book reading list application book javascript web" data-tech="book web">
-          <span class="project-number">05</span><p class="project-tag">Web Development</p>
-          <h3>Book Reading List Application</h3>
-          <p>An application planned to help users maintain a list of books they want to read or have finished reading.</p>
-          <span class="status">Coursework project</span>
+
+        <article class="project-card"
+          data-search="reading book app html css javascript list"
+          data-tech="book web">
+          <span class="project-number">05</span>
+          <p class="project-tag">HTML · CSS · JavaScript</p>
+          <h3>
+            <a href="https://github.com/jitinydv1298-maker/book-reading-list-25bcon1208" target="_blank" rel="noopener noreferrer">
+              Reading Book App
+            </a>
+          </h3>
+          <p>A web application for keeping track of books read and saving reading progress, built using HTML, CSS, and JavaScript.</p>
+          <a href="https://github.com/jitinydv1298-maker/book-reading-list-25bcon1208" target="_blank" rel="noopener noreferrer">
+            View Project →
+          </a>
         </article>
+
       </div>
-      <p id="noResults" class="no-results" hidden>No matching projects found.</p>
+
+      <p id="noResults" class="no-results" hidden>
+        No matching projects found.
+      </p>
     </section>
 
+    <!-- AI Chatbot -->
+    <section id="chatbot" class="section">
+      <p class="eyebrow">ASK ABOUT MY PORTFOLIO</p>
+      <h2 class="section-title">AI Portfolio Assistant</h2>
+      <p class="section-description">
+        Ask questions about my education, skills, projects and experience.
+      </p>
+
+      <div class="content-card chatbot-card">
+        <div class="chatbot-heading">
+          <div class="avatar chatbot-avatar">AI</div>
+          <div>
+            <h3>Portfolio Assistant</h3>
+            <p class="muted">Your guide to Jitin's portfolio</p>
+          </div>
+        </div>
+
+        <div id="chatMessages" class="chat-messages"
+             role="log" aria-live="polite">
+          <div class="chat-message bot-message">
+            Hi! I'm Jitin's portfolio assistant. You can ask me about
+            his education, skills, and projects.
+          </div>
+        </div>
+
+        <div class="chat-suggestions">
+          <button type="button" class="chat-suggestion"
+            data-question="Tell me about Jitin's education.">
+            Education
+          </button>
+          <button type="button" class="chat-suggestion"
+            data-question="What skills is Jitin learning?">
+            Skills
+          </button>
+          <button type="button" class="chat-suggestion"
+            data-question="Tell me about Jitin's projects.">
+            Projects
+          </button>
+        </div>
+
+        <form id="chatForm" class="chat-form">
+          <input id="chatInput" type="text"
+            placeholder="Ask a question..."
+            aria-label="Your question"
+            maxlength="500" required>
+          <button id="chatSend" class="btn" type="submit">
+            Send
+          </button>
+        </form>
+
+        <p id="chatStatus" class="muted" aria-live="polite">
+          Chat assistant interface ready.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
     <section id="contact" class="section">
       <p class="eyebrow">LET'S CONNECT</p>
       <h2 class="section-title">Contact Me</h2>
+
       <div class="content-card contact-card">
         <h3>Jitin Yadav</h3>
         <p>JECRC University · B.Tech Computer Science and Engineering</p>
-        <p>Email: <a href="mailto:jitin.25bcon1208@jecrcu.edu.in">jitin.25bcon1208@jecrcu.edu.in</a></p>
-        <p class="muted">Add your GitHub profile link here after confirming the correct URL.</p>
+        <p>
+          Email:
+          <a href="mailto:jitin.25bcon1208@jecrcu.edu.in">
+            jitin.25bcon1208@jecrcu.edu.in
+          </a>
+        </p>
+        <p class="muted">
+          GitHub profile link will be added after confirming the correct URL.
+        </p>
       </div>
     </section>
+
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <p>© <span id="year"></span> Jitin Yadav. Personal Portfolio.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
+```
+
+<!-- Weather API -->
+<section id="weather" class="section">
+  <p class="eyebrow">LIVE WEATHER</p>
+  <h2 class="section-title">Weather Dashboard</h2>
+  <p class="section-description">
+    Check current weather conditions for any city.
+  </p>
+
+  <div class="content-card weather-card">
+    <form id="weatherForm" class="weather-form">
+      <input
+        id="weatherCity"
+        type="text"
+        placeholder="Enter city, e.g. Jaipur"
+        aria-label="City name"
+        value="Jaipur"
+        required
+      />
+      <button class="btn" type="submit">Get Weather</button>
+    </form>
+
+    <div id="weatherResult" aria-live="polite">
+      Enter a city and select Get Weather.
+    </div>
+
+    <p class="muted">
+      Weather data provided by
+      <a href="https://open-meteo.com/" target="_blank" rel="noopener">
+        Open-Meteo
+      </a>.
+    </p>
+  </div>
+</section>
